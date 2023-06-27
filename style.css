@@ -1,5 +1,12 @@
-
-
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
 
 ul{
     list-style-type: none;
@@ -39,4 +46,32 @@ a{
 
 .myNav {
     flex-direction: row;
+    overflow: auto;
+}
+
+.dropdown-options {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color: #222222;
+  }
+  
+.dropdown:hover .dropdown-options {
+    display: block;
+}
+
+.dropdown{
+    display: block;
+    color:white;
+    text-align: right;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.hidden {
+    opacity: 0%;
+}
+
+.hidden:hover {
+    pointer-events: none;
 }
