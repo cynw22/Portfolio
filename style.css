@@ -77,6 +77,14 @@ a:hover{
     text-decoration: none;
 }
 
+.dropdown a {
+   padding: 0px;
+}
+
+.dropdown-options a{
+    padding: 16px;
+}
+
 .dropdown:hover {
     background-color: #111111;
 }
