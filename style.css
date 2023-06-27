@@ -47,6 +47,9 @@ a{
 .myNav {
     flex-direction: row;
     overflow: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #222222;
 }
 
 .dropdown-options {
