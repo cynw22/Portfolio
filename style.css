@@ -8,12 +8,34 @@ button, input[type="submit"], input[type="reset"] {
 	outline: inherit;
 }
 
+/*Color Pallete*/
+:root {
+    --darkBlack: #111111;
+    --lightBlack: #222222;
+    --lightBlue: #D8FDFD;
+    --darkGreen: #044e4e;
+    --white: white;
+
+    --navBarBackground: var(--lightBlack);
+    --navBarHover: var(--darkBlack);
+    --textNavBar: var(--white);
+    --dropdownBackground: var(--darkGreen);
+    --dropdownText: var(--white);
+    --dropdownHover: var(--darkBlack);
+
+    --footerBackground:var(--darkGreen);
+    --footerText: var(--white);
+    --footerHover: var(--darkBlack);
+
+    --heroBackground: var(--lightBlue);
+}
+
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #222222;
+    background-color: var(--navBarBackground);
 }
 
 li{
@@ -26,14 +48,14 @@ li{
   
 li a {
     display: block;
-    color:white;
+    color: var(--textNavBar);
     text-align: center;
     padding: 16px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: #111111;
+    background-color: var(--navBarHover);
     text-decoration: none;
 }
   
@@ -54,7 +76,7 @@ a:hover{
     overflow: auto;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: #222222;
+    background-color: var(--navBarBackground);
     flex-wrap: nowrap;
 }
 
@@ -62,7 +84,7 @@ a:hover{
     display: none;
     position: absolute;
     overflow: auto;
-    background-color: #222222;
+    background-color: var(--dropdownBackground);
     margin-top: 16px;
   }
   
@@ -72,7 +94,7 @@ a:hover{
 
 .dropdown{
     display: block;
-    color:white;
+    color:var(--dropdownText);
     text-align: right;
     padding: 16px;
     text-decoration: none;
@@ -87,7 +109,7 @@ a:hover{
 }
 
 .dropdown:hover {
-    background-color: #111111;
+    background-color: var(--dropdownHover);
 }
 
 .hidden {
@@ -99,21 +121,27 @@ a:hover{
 }
 
 footer {
-    background-color: #222222;
+    background-color: var(--footerBackground);
     display: flex;
     align-content: center;
     justify-content: center;
-    padding: 16px;
+    padding: 13px;
 }
 
 footer a{
-    color: white;
+    color: var(--footerText);
     padding: 16px;
 }
 
 footer a:hover{
-    color: white;
-    background-color: #111111;
+    color: var(--footerText);
+    background-color: var(--footerHover);
     padding: 16px;
     text-decoration: none;
+}
+
+
+/* Unique stuff down here */
+.hero {
+    background-color: var(--heroBackground);
 }
