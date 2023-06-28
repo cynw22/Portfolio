@@ -16,20 +16,20 @@ button, input[type="submit"], input[type="reset"] {
     --darkGreen: #044e4e;
     --white: white;
     --lightPink: #FBC6E6;
-    --darkPink: #B7016E;
+    --purple: #D5C7E5;
 
     --navBarBackground: var(--lightBlack);
     --navBarHover: var(--darkBlack);
     --textNavBar: var(--white);
-    --dropdownBackground: var(--darkGreen);
-    --dropdownText: var(--white);
+    --dropdownBackground: var(--lightBlack);
+    --dropdownText: var(--darkBlack);
     --dropdownHover: var(--darkBlack);
 
-    --footerBackground:var(--darkGreen);
+    --footerBackground:var(--lightBlack);
     --footerText: var(--white);
     --footerHover: var(--darkBlack);
 
-    --heroBackground: var(--lightBlue);
+    --heroBackground: var(--lightPink);
 }
 
 ul{
@@ -87,6 +87,7 @@ a:hover{
     position: absolute;
     overflow: auto;
     background-color: var(--dropdownBackground);
+    color: var(--dropdownText);
     margin-top: 16px;
   }
   
@@ -127,7 +128,7 @@ footer {
     display: flex;
     align-content: center;
     justify-content: center;
-    padding: 13px;
+    padding: 16px;
 }
 
 footer a{
@@ -144,9 +145,36 @@ footer a:hover{
 
 
 /* Unique stuff down here */
+main {
+    padding: 0% 5%;
+    background-color: var(--lightBlue);
+}
+
 .hero {
     background-color: var(--heroBackground);
 }
+
+.description {
+    padding: 5% 2%;
+    background-color: white;
+}
+
+.description div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.comunication {
+    background-color: var(--lightPink);
+    color: var(--lightBlack);
+    padding: 10px;
+}
+.comunication div {
+    display: flex;
+    justify-content: center;
+}
+
 
 .grid {
     background-color: var(--white);
