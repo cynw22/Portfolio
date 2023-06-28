@@ -15,6 +15,8 @@ button, input[type="submit"], input[type="reset"] {
     --lightBlue: #D8FDFD;
     --darkGreen: #044e4e;
     --white: white;
+    --lightPink: #FBC6E6;
+    --darkPink: #B7016E;
 
     --navBarBackground: var(--lightBlack);
     --navBarHover: var(--darkBlack);
@@ -144,4 +146,27 @@ footer a:hover{
 /* Unique stuff down here */
 .hero {
     background-color: var(--heroBackground);
+}
+
+.grid {
+    background-color: var(--white);
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-item{
+    background-color: var(--lightPink);
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-item:hover{
+    background-color: var(--lightBlue);
+    padding: 20px;
+    text-align: center;
 }
