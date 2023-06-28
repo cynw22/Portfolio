@@ -2,11 +2,13 @@
 /* Unique stuff down here */
 main {
     padding: 0% 5%;
-    background-color: var(--lightBlue);
+    background-color: var(--mainBackground);
 }
 
 .hero {
     background-color: var(--heroBackground);
+    color: var(--heroText);
+    padding: 5%;
 }
 
 .description {
@@ -24,16 +26,23 @@ main {
     background-color: var(--lightPink);
     color: var(--lightBlack);
     padding: 10px;
+    /* margin-bottom: 10px; */
 }
+
+.comunication:hover {
+    background-color: var(--purple);
+    color: var(--lightBlack);
+    padding: 10px;
+}
+
 .comunication div {
     display: flex;
     justify-content: center;
 }
 
-
 .grid {
     background-color: var(--white);
-    padding: 10px;
+    padding: 10px 0px;
 }
 
 .grid-container {
@@ -49,7 +58,7 @@ main {
 }
 
 .grid-item:hover{
-    background-color: var(--lightBlue);
+    background-color: var(--purple);
     padding: 20px;
     text-align: center;
 }
