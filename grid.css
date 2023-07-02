@@ -1,0 +1,24 @@
+@import "navigation.css";
+.grid {
+    background-color: var(--white);
+    padding: 10px 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-item{
+    background-color: var(--lightPink);
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-item:hover{
+    background-color: var(--purple);
+    padding: 20px;
+    text-align: center;
+}
+
