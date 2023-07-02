@@ -123,7 +123,6 @@ a{
 }
 
 footer {
-    background-color: var(--footerBackground);
     display: flex;
     align-content: center;
     justify-content: center;
@@ -142,6 +141,20 @@ footer a:hover{
     text-decoration: none;
 }
 
+#footer {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--navBarBackground);
+    width: 100%;
+ }
+
+ #footer a {
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+ }
+
+
 main a:hover{
     text-decoration: none;
 }
@@ -151,5 +164,5 @@ main {
     background-color: var(--mainBackground);
     margin: 2% 0%;
     margin-top: 0%;
-    margin-bottom: 0%;
+    margin-bottom: 80px;
 }
