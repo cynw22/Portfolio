@@ -36,3 +36,11 @@
     display: flex;
     justify-content: center;
 }
+
+.inverseCol .grid-item {
+    background-color: var(--purple);
+}
+
+.inverseCol .grid-item:hover {
+    background-color: var(--lightPink);
+}
